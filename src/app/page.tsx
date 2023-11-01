@@ -1,13 +1,17 @@
+'use client'
+
+import TopCards from '@/components/TopCards';
+import BarChart from '@/components/BarChart';
+import PieChart from '@/components/PieChart';
 export default function Home() {
   return (
     <>
-      <span className="font-bold text-4xl">Home</span>
-      <div className="border-dashed border border-zinc-500 w-full h-12 rounded-lg"></div>
-      <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg"></div>
-      <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg"></div>
-      <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg"></div>
-      <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg"></div>
-      <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg"></div>
+    
+      <TopCards/>
+      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+      <BarChart/>
+      <PieChart/>
+      </div>
     </>
   );
 }
